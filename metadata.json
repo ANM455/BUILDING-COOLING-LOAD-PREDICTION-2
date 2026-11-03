@@ -1,0 +1,6 @@
+{
+  "name": "CoolingLoad-ML: Building Energy Predictor & ML Studio",
+  "description": "End-to-end Machine Learning pipeline and digital twin predicting building cooling load from architectural features based on the benchmark UCI Energy Efficiency dataset.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

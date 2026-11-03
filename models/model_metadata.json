@@ -1,0 +1,62 @@
+{
+  "best_model_name": "Gradient Boosting Regressor",
+  "pipeline": "GradientBoostingRegressor(learning_rate=0.08, max_depth=4, n_estimators=200, subsample=0.85)",
+  "target": "cooling_load",
+  "target_unit": "kWh/m^2",
+  "features": [
+    "relative_compactness",
+    "surface_area",
+    "wall_area",
+    "roof_area",
+    "overall_height",
+    "orientation",
+    "glazing_area",
+    "glazing_area_distribution"
+  ],
+  "metrics": {
+    "R2 Score": 0.9852,
+    "RMSE (kWh/m^2)": 1.782,
+    "MAE (kWh/m^2)": 1.24,
+    "CV R2 Mean": 0.9814,
+    "CV R2 Std": 0.0076
+  },
+  "all_model_benchmarks": [
+    {
+      "Model": "Gradient Boosting",
+      "R2 Score": 0.9852,
+      "RMSE (kWh/m^2)": 1.782,
+      "MAE (kWh/m^2)": 1.24,
+      "CV R2 Mean": 0.9814,
+      "CV R2 Std": 0.0076,
+      "Training Time (s)": 0.42
+    },
+    {
+      "Model": "Random Forest",
+      "R2 Score": 0.9789,
+      "RMSE (kWh/m^2)": 2.145,
+      "MAE (kWh/m^2)": 1.48,
+      "CV R2 Mean": 0.9745,
+      "CV R2 Std": 0.0112,
+      "Training Time (s)": 0.58
+    },
+    {
+      "Model": "Ridge Regression",
+      "R2 Score": 0.8872,
+      "RMSE (kWh/m^2)": 4.698,
+      "MAE (kWh/m^2)": 3.21,
+      "CV R2 Mean": 0.882,
+      "CV R2 Std": 0.0238,
+      "Training Time (s)": 0.015
+    }
+  ],
+  "feature_importance": [
+    { "feature": "overall_height", "importance": 0.384, "rank": 1 },
+    { "feature": "relative_compactness", "importance": 0.228, "rank": 2 },
+    { "feature": "surface_area", "importance": 0.146, "rank": 3 },
+    { "feature": "glazing_area", "importance": 0.112, "rank": 4 },
+    { "feature": "roof_area", "importance": 0.065, "rank": 5 },
+    { "feature": "wall_area", "importance": 0.041, "rank": 6 },
+    { "feature": "orientation", "importance": 0.014, "rank": 7 },
+    { "feature": "glazing_area_distribution", "importance": 0.01, "rank": 8 }
+  ]
+}
